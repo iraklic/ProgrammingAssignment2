@@ -3,6 +3,10 @@
 
 ## Write a short comment describing this function
 
+# This function implements setter and getter fir the inverse of the matrix
+# In case iverse is never calculated it returns NULL
+# otherwise the inverse itself
+
 makeCacheMatrix <- function(x = matrix())
     {
     m <- NULL
@@ -20,6 +24,10 @@ makeCacheMatrix <- function(x = matrix())
 
 
 ## Write a short comment describing this function
+
+# this function utilizes the makeCacheMatrix and lexical scoping via << operator
+# if inverse is already calculated it just fetches it from "m"
+# otherwise calculates and sets it via setInverse
 
 cacheSolve <- function(x, ...)
     {
